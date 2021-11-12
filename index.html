@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Final-CardozoTomasGabriel/js/scripts.js"></script>
+    <link rel="stylesheet" href="../Final-CardozoTomasGabriel/css-bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../Final-CardozoTomasGabriel/css-bootstrap/bootstrap-utilities.css">        
+    <title>Financiera</title>    
+</head>
+    <body>
+        <header>
+            <div class="pt-4 pb-3 text-center text-light font-weight-bolder bg-dark">
+                Financiera T.C.
+            </div>
+        </header>
+
+        <!-- NAVBAR -->
+
+        <!-- ACA SE CARGA EL PRESTAMO Solicitado y luego se muestra-->
+
+        <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark mb-1">
+            <div class="navbar-collapse" id="navMenu">
+                <div class="col-1 navbar-nav mr-auto">
+                    <div class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>          
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="cargarCliente" method="post" name="cliente">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="m-4">
+                                    <label class="row">Apellido</label>
+                                    <input class="row" type="text" name="apellido" size="60" required>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="m-4">
+                                    <label class="row">Nombre</label>
+                                    <input class="row" type="text" name="nombre" size="60" required>
+                                </div>    
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="m-4">
+                                    <label class="row">Monto Solicitado</label>
+                                    <input class="row" type="text" name="monto" size="60" required>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="m-4">
+                                    <label class="row">Cantidad de Cuotas:</label>
+                                    <input class="row" type="text" name="cuotas" size="60" required>
+                                </div>    
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <input class="col-md-12 p-2 btn btn-success" type="submit" value="Solicitar Prestamo" name="name">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
